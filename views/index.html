@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CRUD APPLICATION</title>
+        
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../assets/css/style.css">
+    </head>
+    <body>
+  <header id="header">
+    <nav>
+        <div class="container">
+            <div class="text-center">
+                <img src="/assets/img/download.png">
+                <a href="/" class="nav-brand text-dark">User management system </a>
+            </div>
+        </div>
+    </nav>
+  </header>
+  <main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <a href="/add-user" class="border-shadow">
+                <span class="text-gradient">new user<i class="fas fa-user"></i></span>
+            </a>
+        </div>
+        <form action="/" method="POST">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>email</th>
+                        <th>gender</th>
+                        <th>status</th>
+                        <th>action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>username</td>
+                        <td>ex@amail.com</td>
+                        <td>male</td>
+                        <td>active</td>
+                        <td>
+                            <a href="#" class="btn border-shadow update">
+                                <span class="text-gradient"><i class="fas fa-pencil update"></i></span>
+                            </a>
+
+                            <a  class="btn border-shadow delete">
+                                <span class="text-gradient"><i class="fas fa-times"></i></span>
+                            </a>
+                        </td>
+                        
+
+                    </tr>
+                </tbody>
+            </table>
+
+        </form>
+    </div>
+  </main>
+</body>
+</html>
